@@ -1,5 +1,7 @@
-from node
+FROM node
+ADD app.js package.json /app/
+ADD config app/config
 WORKDIR /app
-COPY app.js app.js
-ENTRYPOINT ["node"]
+RUN npm install
+ENTRYPOINT [ "node" ]
 CMD ["/app/app.js"]

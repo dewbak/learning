@@ -1,0 +1,6 @@
+The name of this chart is {{ .Chart.Name }},
+its version is {{ .Chart.Version }} and the bundled version is {{ .Chart.AppVersion }}.
+The release name is {{ .Release.Name }} and it will be installed on the {{ .Release.Namspace }} namespace.
+Is this a new installation? {{ .Release.IsInstall }}
+Is this an upgrade? {{ .Release.IsUpgrade }}
+The version of Kubernetes running on this cluster is {{ .Capabilities.KubeVersion }}
