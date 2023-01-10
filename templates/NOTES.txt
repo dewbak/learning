@@ -1,1 +1,1 @@
-{{ include "myapp.fullname" . }}
+{{ .Values.imported.containerPort }}

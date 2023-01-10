@@ -38,6 +38,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
+  port: 80
   ports:
     - number: 80
       targetPort: http
@@ -89,6 +90,6 @@ tolerations: []
 
 affinity: {}
 
-# redis:
-#   auth:
-#     enabled: false
+redis:
+  auth:
+    enabled: false
